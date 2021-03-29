@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Div, span, id and class</title>
+    <style>
+      .card {
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+      .enhance {
+        color: yellow;
+        background-color: black;
+      }
+    </style>
   </head>
   <body>
     <div id="main-header">
@@ -18,17 +31,20 @@
       <li><a href="#">Contact</a></li>
     </ul>
 
-    <div id="about">
+    <div id="about" class="card">
       <h3>About</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum
-        dignissimos, molestias voluptatem aperiam quibusdam id similique quis
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <span class="enhance"
+          >Reiciendis eum dignissimos, molestias voluptatem aperiam quibusdam id
+          similique quis</span
+        >
         accusamus dicta soluta? Reprehenderit perspiciatis maiores doloribus
         laboriosam labore voluptatem ipsam neque.
       </p>
     </div>
 
-    <div id="contact">
+    <div id="contact" class="card">
       <h3>Contact Me</h3>
       <ul>
         <li>Address: 50 Main St., Burns TN</li>
@@ -38,7 +54,7 @@
     </div>
 
     <div id="footer">
-      <p>Copyright 2021</p>
+      <p>Copyright &copy;2021</p>
     </div>
   </body>
 </html>
